@@ -1,0 +1,2 @@
+* * * * * root /usr/local/bin/python /app/main.py >> /var/log/cron.log 2>&1
+0 10 * * * root PGPASSWORD=${POSTGRES_PASSWORD} pg_dump -U ${POSTGRES_USER} -h db -d ${POSTGRES_DB} > /app/backup/dump_$(date +\%Y-\%m-\%d).sql 2>> /var/log/cron-backup.log

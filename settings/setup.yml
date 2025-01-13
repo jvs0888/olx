@@ -1,0 +1,25 @@
+url:
+  base: 'https://www.olx.ua'
+  page: 'https://www.olx.ua/uk/list/'
+  phone: 'https://www.olx.ua/api/v1/offers/{product_id}/limited-phones/'
+
+proxy:
+  use: false
+  use_free: true
+  url_free: 'https://raw.githubusercontent.com/monosans/proxy-list/main/{anonymous}/{proxy_type}.txt'
+  http_proxy: '{login}:{password}@{host}:{port}'
+
+headers:
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+  accept-language: 'en-US,en;q=0.9'
+  cache-control: 'max-age=0'
+  priority: 'u=0, i'
+  referer: 'https://www.google.com/'
+  sec-ch-ua: '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"'
+  sec-ch-ua-mobile: '?0'
+  sec-ch-ua-platform: '"Windows"'
+  sec-fetch-dest: 'document'
+  sec-fetch-mode: 'navigate'
+  sec-fetch-site: 'cross-site'
+  sec-fetch-user: '?1'
+  upgrade-insecure-requests: '1'
